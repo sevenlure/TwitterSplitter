@@ -3,14 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@livechat/livechat-visitor-sdk": "0.29.0-beta1",
+    "@livechat/ui-kit": "0.0.9",
+    "antd": "^3.6.6",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "styled-components": "^3.3.3"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "eject": "react-app-rewired eject",
+    "test": "node scripts/test.js --env=jsdom",
+    "fixcode": "prettier --no-semi --single-quote --write ./src/*.js ./src/*/*.js ./src/**/*.js  ./src/*/*/*.js ./src/*/*/*/*.js ./src/*/*/*/*/*.js ./src/*/*/*/*/*/*.js ./src/*/*/*/*/*/*/*.js ./src/*/*/*/*/*/*/*/*.js"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.8.0",
+    "react-app-rewired": "^1.5.2"
   }
 }
