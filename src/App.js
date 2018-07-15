@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Modal, Button } from 'antd';
+import AppCon from './components/App'
+import Maximized from './components/Maximized'
+import {
+  ThemeProvider, FixedWrapper, SampleMaximized, SampleMinimized, Avatar, Message, MessageText,
+  TitleBar, IconButton, CloseIcon, defaultTheme, TextComposer,
+  AgentBar, Row, Column, Title, Subtitle,
+  Fill, TextInput, Fit, SendButton
+} from '@livechat/ui-kit'
+import splitMessage from './util/splitMessage'
+import { ZALORA_LOGO, TWITTER_LOGO } from './config'
+import HomePage from './containers/home-page'
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <HomePage></HomePage>
     );
   }
 }
