@@ -6,6 +6,7 @@
     "@livechat/livechat-visitor-sdk": "0.29.0-beta1",
     "@livechat/ui-kit": "0.0.9",
     "antd": "^3.6.6",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4",
@@ -14,8 +15,9 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "react-app-rewired test --env=jsdom",
-    "eject": "react-app-rewired eject"
+    "eject": "react-app-rewired eject",
+    "test": "node scripts/test.js --env=jsdom",
+    "fixcode": "prettier --no-semi --single-quote --write ./src/*.js ./src/*/*.js ./src/**/*.js  ./src/*/*/*.js ./src/*/*/*/*.js ./src/*/*/*/*/*.js ./src/*/*/*/*/*/*.js ./src/*/*/*/*/*/*/*.js ./src/*/*/*/*/*/*/*/*.js"
   },
   "devDependencies": {
     "babel-plugin-import": "^1.8.0",
