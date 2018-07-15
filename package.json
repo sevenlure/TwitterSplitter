@@ -16,7 +16,7 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "eject": "react-app-rewired eject",
-    "test": "node scripts/test.js --env=jsdom",
+    "test": "node scripts/test.js",
     "fixcode": "prettier --no-semi --single-quote --write ./src/*.js ./src/*/*.js ./src/**/*.js  ./src/*/*/*.js ./src/*/*/*/*.js ./src/*/*/*/*/*.js ./src/*/*/*/*/*/*.js ./src/*/*/*/*/*/*/*.js ./src/*/*/*/*/*/*/*/*.js"
   },
   "devDependencies": {
